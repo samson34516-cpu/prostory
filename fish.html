@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виды рыб - Рыбалка в России</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>🎣 Просторы</h1>
+            <p>Лучшие места, снасти и советы от бывалых</p>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="places.html">Места рыбалки</a>
+            <a href="tackle.html">Снасти</a>
+            <a href="fish.html" class="active">Виды рыбы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">☰</button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1> Рыбы Самарской области</h1>
+            <p>Изучаем повадки, места обитания и способы ловли самых популярных рыб</p>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все рыбы</button>
+                <button class="filter-btn" data-filter="predator">Хищные</button>
+                <button class="filter-btn" data-filter="peaceful">Мирные</button>
+                <button class="filter-btn" data-filter="trophy">Трофейные</button>
+                <button class="filter-btn" data-filter="winter">Зимняя ловля</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="fish-catalog">
+        <div class="container">
+            <div class="fish-grid">
+                <div class="fish-card" data-type="predator trophy winter">
+                    <div class="fish-image">
+                        <img src="C:\Users\Samso\Desktop\Сайт\Фото\Щука.jpeg" alt="Щука">
+                        <span class="fish-badge">Хищник</span>
+                    </div>
+                    <div class="fish-content">
+                        <h3> Щука</h3>
+                        <div class="fish-latin">Esox lucius</div>
+                        <p>Одна из самых распространённых хищных рыб в России. Отличается агрессивным характером и мощной хваткой.</p>
+                        <div class="fish-details">
+                            <div class="detail-item"><span class="detail-label">Вес:</span><span>до 15-20 кг</span></div>
+                            <div class="detail-item"><span class="detail-label">Снасти:</span><span>Спиннинг, блесны, воблеры</span></div>
+                            <div class="detail-item"><span class="detail-label">Сезон:</span><span>Круглый год</span></div>
+                            <div class="detail-item"><span class="detail-label">Места:</span><span>Реки, озёра, заливы</span></div>
+                        </div>
+                        <a href="#" class="btn-detail">Секреты ловли →</a>
+                    </div>
+                </div>
+
+                <div class="fish-card" data-type="predator winter">
+                    <div class="fish-image">
+                        <img src="C:\Users\Samso\Desktop\Сайт\Фото\Окунь.jpg" alt="Окунь">
+                        <span class="fish-badge">Хищник</span>
+                    </div>
+                    <div class="fish-content">
+                        <h3> Окунь</h3>
+                        <div class="fish-latin">Perca fluviatilis</div>
+                        <p>Самый массовый хищник. Встречается везде, активен круглый год. Отлично ловится на малька и блесны.</p>
+                        <div class="fish-details">
+                            <div class="detail-item"><span class="detail-label">Вес:</span><span>до 2-3 кг</span></div>
+                            <div class="detail-item"><span class="detail-label">Снасти:</span><span>Спиннинг, мормышка, блесна</span></div>
+                            <div class="detail-item"><span class="detail-label">Сезон:</span><span>Круглый год</span></div>
+                            <div class="detail-item"><span class="detail-label">Места:</span><span>Везде</span></div>
+                        </div>
+                        <a href="#" class="btn-detail">Секреты ловли →</a>
+                    </div>
+                </div>
+
+                <div class="fish-card" data-type="predator trophy winter">
+                    <div class="fish-image">
+                        <img src="C:\Users\Samso\Desktop\Сайт\Фото\Судак.jpg" alt="Судак">
+                        <span class="fish-badge">Хищник</span>
+                    </div>
+                    <div class="fish-content">
+                        <h3> Судак</h3>
+                        <div class="fish-latin">Sander lucioperca</div>
+                        <p>Ценный трофейный хищник. Предпочитает чистую воду, активен в сумерках. Мясо считается деликатесом.</p>
+                        <div class="fish-details">
+                            <div class="detail-item"><span class="detail-label">Вес:</span><span>до 10-12 кг</span></div>
+                            <div class="detail-item"><span class="detail-label">Снасти:</span><span>Спиннинг, джиг, воблеры</span></div>
+                            <div class="detail-item"><span class="detail-label">Сезон:</span><span>Май-октябрь</span></div>
+                            <div class="detail-item"><span class="detail-label">Места:</span><span>Глубокие реки, водохранилища</span></div>
+                        </div>
+                        <a href="#" class="btn-detail">Секреты ловли →</a>
+                    </div>
+                </div>
+
+                <div class="fish-card" data-type="predator trophy">
+                    <div class="fish-image">
+                        <img src="C:\Users\Samso\Desktop\Сайт\Фото\Сом.jpeg" alt="Сом">
+                        <span class="fish-badge">Гигант</span>
+                    </div>
+                    <div class="fish-content">
+                        <h3> Сом</h3>
+                        <div class="fish-latin">Silurus glanis</div>
+                        <p>Самый крупный пресноводный хищник. Живёт в глубоких ямах, активен ночью. Ловля сома — настоящий вызов.</p>
+                        <div class="fish-details">
+                            <div class="detail-item"><span class="detail-label">Вес:</span><span>до 100+ кг</span></div>
+                            <div class="detail-item"><span class="detail-label">Снасти:</span><span>Спиннинг, квок, донка</span></div>
+                            <div class="detail-item"><span class="detail-label">Сезон:</span><span>Июнь-сентябрь</span></div>
+                            <div class="detail-item"><span class="detail-label">Места:</span><span>Глубокие реки, ямы</span></div>
+                        </div>
+                        <a href="#" class="btn-detail">Секреты ловли →</a>
+                    </div>
+                </div>
+
+                <div class="fish-card" data-type="peaceful">
+                    <div class="fish-image">
+                        <img src="C:\Users\Samso\Desktop\Сайт\Фото\Карась.jpeg" alt="Карась">
+                        <span class="fish-badge">Мирный</span>
+                    </div>
+                    <div class="fish-content">
+                        <h3> Карась</h3>
+                        <div class="fish-latin">Carassius</div>
+                        <p>Самая популярная рыба для начинающих. Неприхотлив, живёт почти везде. Ловится на поплавочную удочку.</p>
+                        <div class="fish-details">
+                            <div class="detail-item"><span class="detail-label">Вес:</span><span>до 2-3 кг</span></div>
+                            <div class="detail-item"><span class="detail-label">Снасти:</span><span>Поплавок, фидер</span></div>
+                            <div class="detail-item"><span class="detail-label">Сезон:</span><span>Май-сентябрь</span></div>
+                            <div class="detail-item"><span class="detail-label">Места:</span><span>Пруды, озёра, затоны</span></div>
+                        </div>
+                        <a href="#" class="btn-detail">Секреты ловли →</a>
+                    </div>
+                </div>
+
+                <div class="fish-card" data-type="peaceful">
+                    <div class="fish-image">
+                        <img src="C:\Users\Samso\Desktop\Сайт\Фото\Лещ.jpeg" alt="Лещ">
+                        <span class="fish-badge">Мирный</span>
+                    </div>
+                    <div class="fish-content">
+                        <h3> Лещ</h3>
+                        <div class="fish-latin">Abramis brama</div>
+                        <p>Ценная промысловая рыба. Держится стаями на глубине. Любит сладкие ароматы в прикормке.</p>
+                        <div class="fish-details">
+                            <div class="detail-item"><span class="detail-label">Вес:</span><span>до 4-6 кг</span></div>
+                            <div class="detail-item"><span class="detail-label">Снасти:</span><span>Фидер, поплавок</span></div>
+                            <div class="detail-item"><span class="detail-label">Сезон:</span><span>Май-октябрь</span></div>
+                            <div class="detail-item"><span class="detail-label">Места:</span><span>Реки, водохранилища</span></div>
+                        </div>
+                        <a href="#" class="btn-detail">Секреты ловли →</a>
+                    </div>
+                </div>
+
+                <div class="fish-card" data-type="peaceful winter">
+                    <div class="fish-image">
+                        <img src="https://images.pexels.com/photos/1971527/pexels-photo-1971527.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Плотва">
+                        <span class="fish-badge">Мирный</span>
+                    </div>
+                    <div class="fish-content">
+                        <h3>🐟 Плотва</h3>
+                        <div class="fish-latin">Rutilus rutilus</div>
+                        <p>Одна из самых массовых рыб. Активна круглый год, хорошо ловится и летом, и зимой со льда.</p>
+                        <div class="fish-details">
+                            <div class="detail-item"><span class="detail-label">Вес:</span><span>до 1-2 кг</span></div>
+                            <div class="detail-item"><span class="detail-label">Снасти:</span><span>Поплавок, мормышка</span></div>
+                            <div class="detail-item"><span class="detail-label">Сезон:</span><span>Круглый год</span></div>
+                            <div class="detail-item"><span class="detail-label">Места:</span><span>Реки, озёра</span></div>
+                        </div>
+                        <a href="#" class="btn-detail">Секреты ловли →</a>
+                    </div>
+                </div>
+
+                <div class="fish-card" data-type="predator trophy">
+                    <div class="fish-image">
+                        <img src="C:\Users\Samso\Desktop\Сайт\Фото\Жерех.jpeg" alt="Жерех">
+                        <span class="fish-badge">Хищник</span>
+                    </div>
+                    <div class="fish-content">
+                        <h3> Жерех</h3>
+                        <div class="fish-latin">Salmo salar</div>
+                        <p>Сильный и осторожный хищник из семейства карповых, который ценится рыболовами за стремительную поклевку и мощное сопротивление.</p>
+                        <div class="fish-details">
+                            <div class="detail-item"><span class="detail-label">Вес:</span><span>до 8-12 кг</span></div>
+                            <div class="detail-item"><span class="detail-label">Снасти:</span><span>Спиннинг</span></div>
+                            <div class="detail-item"><span class="detail-label">Сезон:</span><span>Июнь-ноябрь</span></div>
+                            <div class="detail-item"><span class="detail-label">Места:</span><span>Камчатка, Кольский</span></div>
+                        </div>
+                        <a href="#" class="btn-detail">Секреты ловли →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calendar-section">
+        <div class="container">
+            <h2>📅 Календарь клёва по месяцам</h2>
+            <div class="calendar-grid">
+                <div class="calendar-month">
+                    <h4>Весна</h4>
+                    <div class="month-item">🌱 Март - плотва, окунь</div>
+                    <div class="month-item">🌸 Апрель - щука, лещ</div>
+                    <div class="month-item">🌺 Май - карась, сазан</div>
+                </div>
+                <div class="calendar-month">
+                    <h4>Лето</h4>
+                    <div class="month-item">☀️ Июнь - сом, судак</div>
+                    <div class="month-item">🏖️ Июль - жерех, голавль</div>
+                    <div class="month-item">🌾 Август - окунь, плотва</div>
+                </div>
+                <div class="calendar-month">
+                    <h4>Осень</h4>
+                    <div class="month-item">🍂 Сентябрь - щука, судак</div>
+                    <div class="month-item">🍁 Октябрь - окунь, налим</div>
+                    <div class="month-item">❄️ Ноябрь - налим, плотва</div>
+                </div>
+                <div class="calendar-month">
+                    <h4>Зима</h4>
+                    <div class="month-item">⛄ Декабрь - окунь, плотва</div>
+                    <div class="month-item">❄️ Январь - налим, судак</div>
+                    <div class="month-item">🎣 Февраль - лещ, окунь</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tips-section">
+        <div class="container">
+            <h2>🎯 Секреты успешной рыбалки</h2>
+            <div class="tips-list">
+                <div class="tip-card">
+                    <span class="tip-icon">🌅</span>
+                    <h4>Время суток</h4>
+                    <p>Хищник активен на рассвете и закате. Мирная рыба клюёт в течение всего дня.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">🌡️</span>
+                    <h4>Погода</h4>
+                    <p>Перед дождём клёв усиливается. При резком похолодании рыба становится вялой.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">🎣</span>
+                    <h4>Прикормка</h4>
+                    <p>Для мирной рыбы используйте каши и ароматизаторы. Для хищника — живца или искусственные приманки.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">🗺️</span>
+                    <h4>Рельеф дна</h4>
+                    <p>Ищите рыбу на перепадах глубин, у коряжника и в местах с обратным течением.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Рыбалка в России. Все права защищены.</p>
+        <p>Сайт создан для любителей рыбалки по всей стране 🎣</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const fishCards = document.querySelectorAll('.fish-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filterValue = btn.getAttribute('data-filter');
+            fishCards.forEach(card => {
+                const cardTypes = card.getAttribute('data-type');
+                if (filterValue === 'all' || cardTypes.includes(filterValue)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
