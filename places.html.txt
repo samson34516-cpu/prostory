@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Места рыбалки в Самарской области — Просторы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>🎣 Просторы</h1>
+            <p>Лучшие места, снасти и советы от бывалых</p>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="places.html" class="active">Места рыбалки</a>
+            <a href="tackle.html">Снасти</a>
+            <a href="fish.html">Виды рыбы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">☰</button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1> Места рыбалки в Самарской области</h1>
+            <p>Платные и бесплатные водоёмы — от Волги до Кутулукского водохранилища</p>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all"> Все места</button>
+                <button class="filter-btn" data-filter="free"> Бесплатные</button>
+                <button class="filter-btn" data-filter="paid"> Платные</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="places-list">
+        <div class="container">
+            <div class="places-grid">
+                
+                <!-- ========== БЕСПЛАТНЫЕ МЕСТА ========== -->
+                
+                <!-- 1. Река Самара в районе Южного моста -->
+                <div class="place-card" data-type="free" data-url="https://yandex.ru/maps/?text=Южный+мост+Самара+рыбалка">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/2242567/pexels-photo-2242567.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Река Самара у Южного моста">
+                        <span class="place-badge">Бесплатно</span>
+                    </div>
+                    <div class="place-content">
+                        <h3>Река Самара (район Южного моста)</h3>
+                        <div class="place-rating">⭐⭐⭐⭐ 4.6</div>
+                        <p>Удобный берег с подъездом, течение средней силы. Популярное место среди местных рыбаков, хорошие ямы.</p>
+                        <div class="place-info">
+                            <span>🐟 Лещ, плотва, густера, окунь, судак, щука</span>
+                            <span>📅 Сезон: круглый год</span>
+                            <span>🎣 Фидер, поплавок, спиннинг</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- 2. Кутулукское водохранилище -->
+                <div class="place-card" data-type="free" data-url="https://yandex.ru/maps/?text=Кутулукское+водохранилище+Самарская+область">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Кутулукское водохранилище">
+                        <span class="place-badge">Бесплатно</span>
+                    </div>
+                    <div class="place-content">
+                        <h3>Кутулукское водохранилище</h3>
+                        <div class="place-rating">⭐⭐⭐⭐ 4.5</div>
+                        <p>Живописное водохранилище с чистой водой. Глубокие заливы, много коряжника. Отлично для ловли с лодки и берега.</p>
+                        <div class="place-info">
+                            <span>🐟 Щука, окунь, плотва, лещ, карась, судак</span>
+                            <span>📅 Сезон: апрель–ноябрь</span>
+                            <span>🎣 Спиннинг, фидер, кружки</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- 3. Падовские карьеры, поселок Чкаловка -->
+                <div class="place-card" data-type="free" data-url="https://yandex.ru/maps/?text=Падовские+карьеры+Чкаловка+Самарская+область">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/3063809/pexels-photo-3063809.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Падовские карьеры">
+                        <span class="place-badge">Бесплатно</span>
+                    </div>
+                    <div class="place-content">
+                        <h3>Падовские карьеры (п. Чкаловка)</h3>
+                        <div class="place-rating">⭐⭐⭐⭐⭐ 4.8</div>
+                        <p>Затопленные карьеры с прозрачной водой. Живописные берега, много водной растительности. Идеально для мирной и хищной рыбы.</p>
+                        <div class="place-info">
+                            <span>🐟 Карп, карась, щука, окунь, линь, плотва</span>
+                            <span>📅 Сезон: май–сентябрь</span>
+                            <span>🎣 Поплавочная удочка, донка, спиннинг</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- 4. Новокуйбышевский пляж на Волге -->
+                <div class="place-card" data-type="free" data-url="https://yandex.ru/maps/?text=Новокуйбышевский+пляж+Волга">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/1752764/pexels-photo-1752764.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Новокуйбышевский пляж">
+                        <span class="place-badge">Бесплатно</span>
+                    </div>
+                    <div class="place-content">
+                        <h3>Новокуйбышевский пляж (Волга)</h3>
+                        <div class="place-rating">⭐⭐⭐ 4.2</div>
+                        <p>Широкий песчаный берег, удобный подъезд. В летний сезон много отдыхающих, но утром и вечером отличный клёв.</p>
+                        <div class="place-info">
+                            <span>🐟 Лещ, густера, чехонь, судак, окунь, жерех</span>
+                            <span>📅 Сезон: май–октябрь</span>
+                            <span>🎣 Фидер, спиннинг, закидушки</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- 5. Васильевские острова -->
+                <div class="place-card" data-type="free" data-url="https://yandex.ru/maps/?text=Васильевские+острова+Самара">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/4091516/pexels-photo-4091516.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Васильевские острова">
+                        <span class="place-badge">Бесплатно</span>
+                    </div>
+                    <div class="place-content">
+                        <h3>Васильевские острова</h3>
+                        <div class="place-rating">⭐⭐⭐⭐⭐ 4.9</div>
+                        <p>Жемчужина Волги. Множество проток, заливов. Трофейная щука, крупный судак и жерех. Дикая природа.</p>
+                        <div class="place-info">
+                            <span>🐟 Щука, судак, жерех, сазан, лещ, сом</span>
+                            <span>📅 Сезон: апрель–октябрь</span>
+                            <span>🎣 Спиннинг, троллинг, фидер</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- 6. Куйбышевское водохранилище -->
+                <div class="place-card" data-type="free" data-url="https://yandex.ru/maps/?text=Куйбышевское+водохранилище+Самарская+область">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Куйбышевское водохранилище">
+                        <span class="place-badge">Бесплатно</span>
+                    </div>
+                    <div class="place-content">
+                        <h3>Куйбышевское водохранилище</h3>
+                        <div class="place-rating">⭐⭐⭐⭐ 4.7</div>
+                        <p>Огромный водный простор, множество заливов и островов. Здесь водятся настоящие гиганты, возможна ловля сома на квок.</p>
+                        <div class="place-info">
+                            <span>🐟 Сом, судак, щука, берш, лещ, синец, чехонь</span>
+                            <span>📅 Сезон: круглый год</span>
+                            <span>🎣 Спиннинг, троллинг, квок, фидер</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- 7. Рождественская Воложка -->
+                <div class="place-card" data-type="free" data-url="https://yandex.ru/maps/?text=Рождественская+Воложка+Самара">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/2242567/pexels-photo-2242567.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Рождественская Воложка">
+                        <span class="place-badge">Бесплатно</span>
+                    </div>
+                    <div class="place-content">
+                        <h3>Рождественская Воложка</h3>
+                        <div class="place-rating">⭐⭐⭐⭐⭐ 4.8</div>
+                        <p>Протока между Волгой и островами. Спокойное течение, живописные пляжи. Отличный клёв хищника и мирной рыбы.</p>
+                        <div class="place-info">
+                            <span>🐟 Щука, окунь, плотва, густера, лещ, сазан</span>
+                            <span>📅 Сезон: май–октябрь</span>
+                            <span>🎣 Поплавок, спиннинг, фидер</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- 8. Остров Зелененький -->
+                <div class="place-card" data-type="free" data-url="https://yandex.ru/maps/?text=Остров+Зелененький+Самара">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/3063809/pexels-photo-3063809.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Остров Зелененький">
+                        <span class="place-badge">Бесплатно</span>
+                    </div>
+                    <div class="place-content">
+                        <h3>Остров Зелененький</h3>
+                        <div class="place-rating">⭐⭐⭐⭐ 4.6</div>
+                        <p>Популярное место среди рыбаков Тольятти и Самары. Есть удобные подъезды, береговая линия с перепадами глубин.</p>
+                        <div class="place-info">
+                            <span>🐟 Судак, окунь, лещ, густера, плотва, щука</span>
+                            <span>📅 Сезон: апрель–ноябрь</span>
+                            <span>🎣 Спиннинг, фидер, мормышка (зимой)</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- ========== ПЛАТНЫЕ ВОДОЁМЫ ========== -->
+                
+                <!-- 9. Платная база "Серебряный плёс" -->
+                <div class="place-card" data-type="paid" data-url="https://fishing-samara.ru/serebryany-ples">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/4091516/pexels-photo-4091516.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Серебряный плёс">
+                        <span class="place-badge">Платный пруд</span>
+                    </div>
+                    <div class="place-content">
+                        <h3>💰 Серебряный плёс</h3>
+                        <div class="place-rating">⭐⭐⭐⭐⭐ 4.9</div>
+                        <p>Благоустроенные пруды в Красноярском районе. Беседки, мангалы, прокат снастей. Регулярное зарыбление.</p>
+                        <div class="place-info">
+                            <span>🐟 Карп, толстолобик, белый амур, форель, щука</span>
+                            <span>📅 Сезон: круглый год</span>
+                            <span>🎣 Фидер, поплавок, спиннинг</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- 10. База "Самарский трофей" -->
+                <div class="place-card" data-type="paid" data-url="https://fishing-samara.ru/trophy">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/1752764/pexels-photo-1752764.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Самарский трофей">
+                        <span class="place-badge">VIP участок</span>
+                    </div>
+                    <div class="place-content">
+                        <h3> Самарский трофей</h3>
+                        <div class="place-rating">⭐⭐⭐⭐⭐ 4.8</div>
+                        <p>Охраняемая акватория Волги, егерское обслуживание, возможность ночлега. Трофейный сом и жерех.</p>
+                        <div class="place-info">
+                            <span>🐟 Сом, судак, жерех, сазан, щука, берш</span>
+                            <span>📅 Сезон: май–сентябрь</span>
+                            <span>🎣 Спиннинг, троллинг, квок</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- 11. Платный пруд "Окунёвский" -->
+                <div class="place-card" data-type="paid" data-url="https://fishing63.ru/okunevskiy">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Окунёвский пруд">
+                        <span class="place-badge">Платный водоём</span>
+                    </div>
+                    <div class="place-content">
+                        <h3> Окунёвский пруд</h3>
+                        <div class="place-rating">⭐⭐⭐⭐ 4.5</div>
+                        <p>Ухоженный пруд в Волжском районе. Есть парковка, домики для отдыха, крупный карп и карась.</p>
+                        <div class="place-info">
+                            <span>🐟 Карп, карась, линь, окунь, щука</span>
+                            <span>📅 Сезон: апрель–октябрь</span>
+                            <span>🎣 Донные снасти, поплавочная удочка</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+
+                <!-- 12. База отдыха "Волжанка" (платный участок) -->
+                <div class="place-card" data-type="paid" data-url="https://volzhanka.ru">
+                    <div class="place-image">
+                        <img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Волжанка">
+                        <span class="place-badge">Платная база</span>
+                    </div>
+                    <div class="place-content">
+                        <h3> База отдыха «Волжанка»</h3>
+                        <div class="place-rating">⭐⭐⭐⭐ 4.7</div>
+                        <p>Комфортабельная база на берегу Волги. Прокат лодок, егерь, беседки. Отличная рыбалка круглый год.</p>
+                        <div class="place-info">
+                            <span>🐟 Судак, щука, лещ, сом, сазан, окунь</span>
+                            <span>📅 Сезон: круглый год</span>
+                            <span>🎣 Любые снасти</span>
+                        </div>
+                        <a href="#" class="btn-detail">Подробнее →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tips-section">
+        <div class="container">
+            <h2>Советы по рыбалке в Самарской области</h2>
+            <div class="tips-list">
+                <div class="tip-card">
+                    <span class="tip-icon">🗺️</span>
+                    <h4>Изучите регион</h4>
+                    <p>Узнайте, какие виды рыбы водятся, нужны ли разрешения и пропуска на отдельных участках.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">📅</span>
+                    <h4>Учитывайте сезон</h4>
+                    <p>Весной (апрель-май) действуют нерестовые запреты. Лучший клёв — июнь и сентябрь.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">🎣</span>
+                    <h4>Подберите снасти</h4>
+                    <p>Для каждого водоёма и вида рыбы нужны разные снасти. На Волге популярен спиннинг и фидер.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">⚖️</span>
+                    <h4>Соблюдайте правила</h4>
+                    <p>На бесплатных водоёмах есть суточная норма вылова. Берегите природу!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <p>Есть вопросы, предложения или хотите поделиться отчётом о рыбалке? Напишите нам!</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea id="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Просторы. Все права защищены.</p>
+        <p>Сайт создан для любителей рыбалки по всей стране 🎣</p>
+    </div>
+</footer>
+
+<script>
+    // Мобильное меню
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.querySelector('nav');
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    }
+    
+    // Закрываем меню при клике на ссылку (для мобильных)
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('show');
+        });
+    });
+    
+    // Фильтрация карточек мест
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const placeCards = document.querySelectorAll('.place-card');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filterValue = btn.getAttribute('data-filter');
+            
+            placeCards.forEach(card => {
+                if (filterValue === 'all' || card.getAttribute('data-type') === filterValue) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+    
+    // Открытие карточки в новой вкладке при клике
+    placeCards.forEach(card => {
+        const url = card.getAttribute('data-url');
+        if (url) {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', (e) => {
+                // Если кликнули на кнопку "Подробнее", не дублируем событие
+                if (e.target.classList && e.target.classList.contains('btn-detail')) {
+                    e.stopPropagation();
+                    window.open(url, '_blank');
+                    return;
+                }
+                window.open(url, '_blank');
+            });
+        }
+    });
+    
+    // Отдельно обрабатываем кнопки "Подробнее"
+    const detailBtns = document.querySelectorAll('.btn-detail');
+    detailBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const card = btn.closest('.place-card');
+            if (card) {
+                const url = card.getAttribute('data-url');
+                if (url) window.open(url, '_blank');
+            }
+        });
+    });
+    
+    // Форма обратной связи
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                formMessage.textContent = 'Спасибо! Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время.';
+                formMessage.style.color = '#2F5D50';
+                contactForm.reset();
+                setTimeout(() => {
+                    formMessage.textContent = '';
+                }, 5000);
+            } else {
+                formMessage.textContent = 'Пожалуйста, заполните все поля.';
+                formMessage.style.color = '#E07A2F';
+            }
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просторы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>🎣 Просторы</h1>
+            <p>Лучшие места, снасти и советы от бывалых</p>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Главная</a>
+            <a href="places.html">Места рыбалки</a>
+            <a href="tackle.html">Снасти</a>
+            <a href="fish.html">Виды рыбы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">☰</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <h2>Ваш гид по рыбалке в Самарской области</h2>
+            <p>Все что нужно знать о рыбалке в регионе</p>
+            <a href="#categories" class="btn">Начать изучение</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>О проекте</h2>
+            <p>Мы создали этот сайт для тех, кто любит рыбалку так же, как и мы. Здесь вы найдёте описания лучших мест, обзоры снастей, сезонные календари клёва и многое другое.</p>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Основные разделы</h2>
+            <div class="categories-grid">
+                <a href="tackle.html" class="category-card">
+                    <div class="category-icon">🎣</div>
+                    <h3>Снасти</h3>
+                    <p>Спиннинги, фидеры, поплавочные удочки, зимние снасти и всё необходимое для успешной рыбалки</p>
+                    <span class="category-link">Узнать подробнее →</span>
+                </a>
+
+                <a href="fish.html" class="category-card">
+                    <div class="category-icon">🐟</div>
+                    <h3>Виды рыбы</h3>
+                    <p>Щука, окунь, судак, сом, лещ, карась, плотва, лосось — изучаем повадки и способы ловли</p>
+                    <span class="category-link">Узнать подробнее →</span>
+                </a>
+
+                <a href="places.html" class="category-card">
+                    <div class="category-icon">🏞️</div>
+                    <h3>Места для рыбалки</h3>
+                    <p>Волга, Самара, Сок, и другие лучшие водоёмы</p>
+                    <span class="category-link">Узнать подробнее →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="tips">
+        <div class="container">
+            <h2>Советы бывалых</h2>
+            <div class="tips-grid">
+                <div class="tip">
+                    <span class="tip-icon">🐟</span>
+                    <p>Изучайте водоём заранее — глубины, перепады, коряжник. Рыба стоит там, где есть укрытие.</p>
+                </div>
+                <div class="tip">
+                    <span class="tip-icon">🎣</span>
+                    <p>Не бойтесь экспериментировать с приманками. Если на блесну не клюёт — попробуйте воблер или силикон.</p>
+                </div>
+                <div class="tip">
+                    <span class="tip-icon">⏰</span>
+                    <p>Самое лучшее время для рыбалки — рассвет и закат. Днём рыба уходит на глубину.</p>
+                </div>
+                <div class="tip">
+                    <span class="tip-icon">🌦️</span>
+                    <p>Учитывайте погоду: перед дождём клёв обычно активнее, а при резком похолодании рыба становится вялой.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <p>Есть вопросы, предложения или хотите поделиться отчётом о рыбалке? Напишите нам!</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea id="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Просторы. Все права защищены.</p>
+        <p>Сайт создан для любителей рыбалки по всей стране 🎣</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
