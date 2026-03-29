@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазины рыболовных товаров — Просторы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>🎣 Просторы</h1>
+            <p>Лучшие места, снасти и советы от бывалых</p>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="places.html">Места рыбалки</a>
+            <a href="tackle.html">Снасти</a>
+            <a href="fish.html">Виды рыбы</a>
+            <a href="shops.html" class="active">Магазины</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">☰</button>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1>🏪 Магазины рыболовных товаров</h1>
+            <p>Снасти, приманки, экипировка — всё для успешной рыбалки в Самарской области</p>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">🏪 Все магазины</button>
+                <button class="filter-btn" data-filter="samara">📍 Самара</button>
+                <button class="filter-btn" data-filter="tolyatti">📍 Тольятти</button>
+                <button class="filter-btn" data-filter="region">📍 Область</button>
+                <button class="filter-btn" data-filter="online">🛒 Интернет-магазины</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="shops-list">
+        <div class="container">
+            <div class="shops-grid">
+                
+                <!-- ========== САМАРА ========== -->
+                
+                <!-- 1. Рыболовный центр "Трофей" -->
+                <div class="shop-card" data-type="samara" data-url="https://trophy-samara.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/2304772/pexels-photo-2304772.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Рыболовный центр Трофей">
+                        <span class="shop-badge">Официальный дилер</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>🎣 Рыболовный центр «Трофей»</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐⭐ 4.9 (156 отзывов)</div>
+                        <p>Крупнейший магазин в Самаре. Всё для рыбалки: спиннинги, катушки, приманки, лодки, эхолоты. Профессиональная консультация.</p>
+                        <div class="shop-info">
+                            <span>📍 ул. Ново-Садовая, 106</span>
+                            <span>📞 +7 (846) 123-45-67</span>
+                            <span>🕒 09:00–20:00, без выходных</span>
+                            <span>🌐 trophy-samara.ru</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- 2. Рыболовный магазин "Клёвое место" -->
+                <div class="shop-card" data-type="samara" data-url="https://klevoe-mesto.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/4391472/pexels-photo-4391472.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Клёвое место">
+                        <span class="shop-badge">Сеть магазинов</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>🎣 «Клёвое место»</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐⭐ 4.8 (203 отзыва)</div>
+                        <p>Широкий ассортимент от бюджетных до премиальных брендов. Акции, скидки, карта постоянного клиента.</p>
+                        <div class="shop-info">
+                            <span>📍 пр. Ленина, 45</span>
+                            <span>📍 ул. Московское шоссе, 18</span>
+                            <span>📞 +7 (846) 987-65-43</span>
+                            <span>🕒 10:00–21:00</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- 3. Магазин "Спиннинг" -->
+                <div class="shop-card" data-type="samara" data-url="https://spinning-samara.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Спиннинг">
+                        <span class="shop-badge">Специализация</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>🎣 «Спиннинг»</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐ 4.6 (89 отзывов)</div>
+                        <p>Специализированный магазин спиннинговой ловли. Огромный выбор воблеров, блёсен, силикона. Своя тестовая зона.</p>
+                        <div class="shop-info">
+                            <span>📍 ул. Полевая, 12</span>
+                            <span>📞 +7 (846) 555-88-22</span>
+                            <span>🕒 10:00–19:00, вс 10:00–17:00</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- 4. Рыболовная база "Мастер" -->
+                <div class="shop-card" data-type="samara" data-url="https://master-fishing.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/2304772/pexels-photo-2304772.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Мастер">
+                        <span class="shop-badge">Ремонт снастей</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>🎣 «Мастер»</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐ 4.7 (67 отзывов)</div>
+                        <p>Магазин с мастерской по ремонту катушек и удилищ. Большой выбор зимних снастей и прикормок.</p>
+                        <div class="shop-info">
+                            <span>📍 ул. Советской Армии, 234</span>
+                            <span>📞 +7 (846) 333-44-55</span>
+                            <span>🕒 09:00–18:00</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- ========== ТОЛЬЯТТИ ========== -->
+                
+                <!-- 5. Рыболовный мир Тольятти -->
+                <div class="shop-card" data-type="tolyatti" data-url="https://fishmir-tlt.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/4391472/pexels-photo-4391472.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Рыболовный мир">
+                        <span class="shop-badge">Хит продаж</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>🎣 «Рыболовный мир»</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐⭐ 4.9 (312 отзывов)</div>
+                        <p>Крупнейший магазин в Тольятти. Всё для рыбалки: от крючков до лодок ПВХ. Доставка по области.</p>
+                        <div class="shop-info">
+                            <span>📍 ул. Ленина, 78</span>
+                            <span>📞 +7 (8482) 55-66-77</span>
+                            <span>🕒 09:00–20:00</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- 6. Магазин "Фидер" -->
+                <div class="shop-card" data-type="tolyatti" data-url="https://feeder-tlt.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Фидер">
+                        <span class="shop-badge">Фидерная ловля</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>🎣 «Фидер»</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐ 4.7 (98 отзывов)</div>
+                        <p>Специализированный магазин фидерной и донной ловли. Кормушки, фидерные удилища, подставки.</p>
+                        <div class="shop-info">
+                            <span>📍 ул. Мира, 56</span>
+                            <span>📞 +7 (8482) 44-33-22</span>
+                            <span>🕒 10:00–19:00</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- ========== ОБЛАСТЬ ========== -->
+                
+                <!-- 7. Рыболовный центр "Волжский берег" (Сызрань) -->
+                <div class="shop-card" data-type="region" data-url="https://volga-fishing.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/2304772/pexels-photo-2304772.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Волжский берег">
+                        <span class="shop-badge">Сызрань</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>🎣 «Волжский берег»</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐ 4.5 (43 отзыва)</div>
+                        <p>Магазин в Сызрани. Большой выбор приманок, снастей и экипировки для рыбалки на Волге.</p>
+                        <div class="shop-info">
+                            <span>📍 г. Сызрань, ул. Советская, 23</span>
+                            <span>📞 +7 (8464) 98-76-54</span>
+                            <span>🕒 09:00–18:00</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- 8. Магазин "Рыбак" (Кинель) -->
+                <div class="shop-card" data-type="region" data-url="https://rybak-kinel.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/4391472/pexels-photo-4391472.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Рыбак">
+                        <span class="shop-badge">Кинель</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>🎣 «Рыбак»</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐ 4.6 (31 отзыв)</div>
+                        <p>Семейный магазин рыболовных товаров. Приятные цены, приветливый персонал.</p>
+                        <div class="shop-info">
+                            <span>📍 г. Кинель, ул. Ленинградская, 15</span>
+                            <span>📞 +7 (84663) 5-55-55</span>
+                            <span>🕒 09:00–19:00</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- ========== ИНТЕРНЕТ-МАГАЗИНЫ ========== -->
+                
+                <!-- 9. Интернет-магазин "Рыболов63" -->
+                <div class="shop-card" data-type="online" data-url="https://rybolov63.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Рыболов63">
+                        <span class="shop-badge">Доставка по области</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>📦 «Рыболов63»</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐⭐ 4.8 (267 отзывов)</div>
+                        <p>Крупный интернет-магазин с доставкой по Самарской области. Более 5000 товаров в наличии. Регулярные акции.</p>
+                        <div class="shop-info">
+                            <span>🌐 rybolov63.ru</span>
+                            <span>📞 8-800-555-33-22</span>
+                            <span>🚚 Бесплатная доставка от 3000₽</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- 10. Интернет-магазин "FishMarket" -->
+                <div class="shop-card" data-type="online" data-url="https://fishmarket-samara.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/2304772/pexels-photo-2304772.jpeg?auto=compress&cs=tinysrgb&w=600" alt="FishMarket">
+                        <span class="shop-badge">Брендовые снасти</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>📦 FishMarket</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐⭐ 4.9 (412 отзывов)</div>
+                        <p>Оригинальные бренды: Shimano, Daiwa, Rapala, Megabass. Доставка по всей России. Пункт самовывоза в Самаре.</p>
+                        <div class="shop-info">
+                            <span>🌐 fishmarket-samara.ru</span>
+                            <span>📍 Пункт выдачи: ул. Стара-Загора, 45</span>
+                            <span>📞 +7 (846) 200-88-99</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- 11. Магазин "Всё для рыбалки" (Озон и Вайлдберриз партнёр) -->
+                <div class="shop-card" data-type="online" data-url="https://ozon.ru/seller/fishing">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/4391472/pexels-photo-4391472.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Онлайн-маркетплейс">
+                        <span class="shop-badge">Маркетплейс</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>📦 «Всё для рыбалки» на Ozon</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐ 4.7 (850+ отзывов)</div>
+                        <p>Официальный продавец на Ozon. Широкий ассортимент, быстрая доставка, возможность примерки снастей.</p>
+                        <div class="shop-info">
+                            <span>🌐 ozon.ru/seller/fishing</span>
+                            <span>🚚 Курьерская доставка</span>
+                            <span>📦 Постаматы по всей области</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+
+                <!-- 12. Магазин "Зимняя рыбалка" -->
+                <div class="shop-card" data-type="online" data-url="https://zimnyaya-rybalka.ru">
+                    <div class="shop-image">
+                        <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Зимняя рыбалка">
+                        <span class="shop-badge">Сезонные товары</span>
+                    </div>
+                    <div class="shop-content">
+                        <h3>❄️ «Зимняя рыбалка»</h3>
+                        <div class="shop-rating">⭐⭐⭐⭐ 4.6 (156 отзывов)</div>
+                        <p>Специализированный интернет-магазин зимних снастей: мормышки, блёсны, ледобуры, ящики.</p>
+                        <div class="shop-info">
+                            <span>🌐 zimnyaya-rybalka.ru</span>
+                            <span>📞 +7 (846) 777-55-33</span>
+                            <span>❄️ Сезонные скидки до 30%</span>
+                        </div>
+                        <a href="#" class="btn-detail">Перейти на сайт →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tips-section">
+        <div class="container">
+            <h2>Как выбрать магазин рыболовных товаров?</h2>
+            <div class="tips-list">
+                <div class="tip-card">
+                    <span class="tip-icon">🏪</span>
+                    <h4>Офлайн vs Онлайн</h4>
+                    <p>Офлайн-магазины позволяют "подержать" снасти в руках. Онлайн — удобство доставки и шире ассортимент.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">⭐</span>
+                    <h4>Смотрите отзывы</h4>
+                    <p>Перед покупкой обязательно изучите отзывы реальных покупателей о качестве и сервисе.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">💰</span>
+                    <h4>Сравнивайте цены</h4>
+                    <p>Не стесняйтесь сравнивать цены в разных магазинах — разница может быть до 30%.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">🛡️</span>
+                    <h4>Гарантия</h4>
+                    <p>Покупайте в магазинах с официальной гарантией, особенно на дорогие катушки и удилища.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <p>Знаете хороший магазин, которого нет в списке? Напишите нам, и мы добавим его!</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea id="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Просторы. Все права защищены.</p>
+        <p>Сайт создан для любителей рыбалки по всей стране 🎣</p>
+    </div>
+</footer>
+
+<style>
+    /* Дополнительные стили для страницы магазинов (совместимы с основным style.css) */
+    .shops-list {
+        padding: 60px 0;
+        background: var(--color-bg-white);
+    }
+    
+    .shops-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        gap: 30px;
+    }
+    
+    .shop-card {
+        background: var(--color-bg-white);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        transition: all 0.3s;
+        border: 1px solid var(--color-border);
+        cursor: pointer;
+    }
+    
+    .shop-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        border-color: var(--color-accent);
+    }
+    
+    .shop-image {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+        background: var(--color-bg);
+    }
+    
+    .shop-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+    
+    .shop-card:hover .shop-image img {
+        transform: scale(1.05);
+    }
+    
+    .shop-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: var(--color-accent);
+        color: white;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        z-index: 2;
+    }
+    
+    .shop-content {
+        padding: 20px;
+    }
+    
+    .shop-content h3 {
+        font-size: 1.3rem;
+        color: var(--color-primary);
+        margin-bottom: 8px;
+    }
+    
+    .shop-rating {
+        color: var(--color-accent);
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+    }
+    
+    .shop-content p {
+        color: var(--color-text-secondary);
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+    }
+    
+    .shop-info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 20px;
+        font-size: 0.85rem;
+        color: var(--color-text-muted);
+        background: var(--color-bg);
+        padding: 12px;
+        border-radius: 12px;
+    }
+    
+    .shop-info span {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    @media (max-width: 768px) {
+        .shops-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .shop-image {
+            height: 180px;
+        }
+    }
+</style>
+
+<script>
+    // Мобильное меню
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.querySelector('nav');
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    }
+    
+    // Закрываем меню при клике на ссылку
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('show');
+        });
+    });
+    
+    // Фильтрация магазинов
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const shopCards = document.querySelectorAll('.shop-card');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filterValue = btn.getAttribute('data-filter');
+            
+            shopCards.forEach(card => {
+                if (filterValue === 'all' || card.getAttribute('data-type') === filterValue) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+    
+    // Открытие карточки магазина в новой вкладке
+    shopCards.forEach(card => {
+        const url = card.getAttribute('data-url');
+        if (url) {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', (e) => {
+                if (e.target.classList && e.target.classList.contains('btn-detail')) {
+                    e.stopPropagation();
+                    window.open(url, '_blank');
+                    return;
+                }
+                window.open(url, '_blank');
+            });
+        }
+    });
+    
+    // Кнопки "Перейти на сайт"
+    const detailBtns = document.querySelectorAll('.btn-detail');
+    detailBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const card = btn.closest('.shop-card');
+            if (card) {
+                const url = card.getAttribute('data-url');
+                if (url) window.open(url, '_blank');
+            }
+        });
+    });
+    
+    // Форма обратной связи
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                formMessage.textContent = 'Спасибо! Ваше сообщение отправлено. Мы добавим магазин в ближайшее время!';
+                formMessage.style.color = '#2F5D50';
+                contactForm.reset();
+                setTimeout(() => {
+                    formMessage.textContent = '';
+                }, 5000);
+            } else {
+                formMessage.textContent = 'Пожалуйста, заполните все поля.';
+                formMessage.style.color = '#E07A2F';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
